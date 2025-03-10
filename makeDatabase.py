@@ -20,4 +20,3 @@ for line in f.readlines():
     bits = line.strip().split(",")
     c.execute("INSERT INTO books VALUES (?,?,?,?,?)", bits)
 db.commit()
-
